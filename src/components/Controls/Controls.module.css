@@ -1,0 +1,38 @@
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 16px 0;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+}
+
+.label {
+  flex-shrink: 0;
+  width: 80px;
+  font-size: 0.8rem;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.range {
+  flex: 1;
+  accent-color: #f59e0b;
+  height: 4px;
+  cursor: pointer;
+}
+
+.value {
+  flex-shrink: 0;
+  width: 44px;
+  font-size: 0.8rem;
+  color: #aaa;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}

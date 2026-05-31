@@ -1,0 +1,120 @@
+.container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px;
+  cursor: col-resize;
+  background: #111;
+  user-select: none;
+  touch-action: none;
+}
+
+.loadingOverlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.35);
+  z-index: 5;
+  pointer-events: none;
+}
+
+.spinner {
+  width: 36px;
+  height: 36px;
+  border: 3px solid rgba(255, 255, 255, 0.2);
+  border-top-color: #f59e0b;
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.dropping {
+  outline: 2px solid #f59e0b;
+  outline-offset: -2px;
+}
+
+.original {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  display: block;
+  pointer-events: none;
+}
+
+.processed {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.grain {
+  position: absolute;
+  inset: 0;
+  mix-blend-mode: overlay;
+  background-repeat: repeat;
+  background-size: 512px 512px;
+}
+
+.vignette {
+  position: absolute;
+  inset: 0;
+}
+
+.divider {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: rgba(255, 255, 255, 0.8);
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+
+.handle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 36px;
+  height: 36px;
+  background: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.labelLeft,
+.labelRight {
+  position: absolute;
+  bottom: 10px;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: rgba(255, 255, 255, 0.7);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+  pointer-events: none;
+}
+
+.labelLeft {
+  left: 12px;
+}
+
+.labelRight {
+  right: 12px;
+}
