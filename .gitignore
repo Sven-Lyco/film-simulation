@@ -3,3 +3,4 @@ dist/
 luts-source/
 .DS_Store
 .agents/
+public/luts/*.cube
