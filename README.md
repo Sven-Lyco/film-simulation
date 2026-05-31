@@ -24,7 +24,7 @@ npm run build     # Production build → dist/
 `.cube` files are **not tracked in Git** (too large for GitHub). Place them in `public/luts/`.
 
 **Fujifilm** (Velvia 50, Classic Chrome, Classic Neg, Provia 100F, Eterna Cinema, Fuji 400H):
-Download the free Sowerby LUT pack → https://blog.sowerby.me/fuji-film-simulation-profiles/
+Download the free Sowerby LUT pack → https://blog.sowerby.me/wp-content/uploads/2018/02/Fujifilm-XTrans-III-3DL.zip
 Place the zip in `luts-source/`, then run:
 
 ```bash
@@ -32,7 +32,7 @@ npm run fetch-luts
 ```
 
 **Kodak & Ilford** (Portra 400, Gold 200, Ektar 100, HP5 Plus, Delta 3200):
-Download `HaldCLUT.zip` → https://rawpedia.rawtherapee.com/Film_Simulation
+Download `HaldCLUT.zip` → http://rawtherapee.com/shared/HaldCLUT.zip
 Place in `luts-source/`, then run the same command.
 
 Presets without a `.cube` file fall back to a synthetic approximation automatically.
