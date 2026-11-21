@@ -1,6 +1,6 @@
 # Exact Node.js release, so a build can never fall back to an older cached image.
 # Dependabot (.github/dependabot.yml) opens a pull request for newer 24.x releases.
-FROM node:24.22.2-alpine AS builder
+FROM node:24.22.3-alpine AS builder
 WORKDIR /app
 COPY package*.json .npmrc ./
 RUN npm ci
